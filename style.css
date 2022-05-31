@@ -482,10 +482,12 @@ LE FORMULAIRE ET SON ENTOURAGE
 }
 
 #search {
-    padding: 12px 15px;
-    width: 160px;
+    padding: 14px 15px;
+    /* width: 160px; */
+    /* width: max-content; */
     font-weight: bold;
     /* padding: 11px 15px; */
+    /* background-color: #000; */
 }
 
 
@@ -493,23 +495,25 @@ LE FORMULAIRE ET SON ENTOURAGE
 .fa-location-dot {
     position: relative;
     top: 1px;
-    padding: 13.2px 13px;
+    padding: 15.2px 13px;
     font-size: 16px;
     background-color: #f2f2f2;
+    /* background-color: red; */
     border-radius: 10px 0 0 10px;
     color: #000;
 }
 
 #button {
-    padding: 12px 15px;
+    padding: 15px 15px;
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
     color: #fff;
+    font-weight: bold;
 }
 
 .fa-magnifying-glass {
     /* border: 2px solid #000; */
-    padding: 13.2px 15px;
+    padding: 15.2px 15px;
     visibility: hidden;
     border-radius: 10px;
     color: #fff;
@@ -547,7 +551,7 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 #filtre i {
     /* margin-right: 4px; */
-    padding: 10px;
+    padding: 14px;
     border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -653,26 +657,63 @@ h3 {
     width: 30%;
     background-color: #fff;
     border-radius: 17px;
-    box-shadow: 4px 4px 20px #c5c4c4;
+    box-shadow: 0 4px 13px #c5c4c4;
 }
 
 .figure img {
     width: 100%;
     height: 105px;
-    border-radius: 10% 10% 0 0;
+    border-radius: 17px 17px 0 0;
     object-fit: cover;
 }
 
-figcaption {
-    padding: 4px 0 6px 10px;
+#article-gauche .figcaption,
+#article-droite .figcaption {
+    padding: 0 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
 }
 
+#article-gauche .figcaption {
+    border-radius: 0 0 17px 17px;
+}
+
+#article-droite .figcaption {
+    border-radius: 17px 0 0 17px;
+}
+
+/* couleur des fonts bleu */
 .fa-star {
     color: #0065FC;
 }
 
+/* couleur des fonts blanche */
 .priorite {
     color: #c5c4c4;
+}
+
+/* enlever les marges des h4 et p de la class 
+fidcation en dessous des img */
+/* .figcaption h4,
+.figcaption p {
+    margin: 0px;
+} */
+
+.figcaption h4 {
+    font-size: 15px;
+}
+
+.figcaption p {
+    font-size: 14px;
+}
+
+.figcaption .font,
+#font-un,
+#font-deux,
+#font-trois {
+    font-size: 11px;
 }
 
 
@@ -732,7 +773,8 @@ figcaption {
 #article-droite .figure {
     /* padding: 4px; */
     width: 100%;
-    height: 128px;
+    /* height: 128px; */
+    height: 122px;
     display: flex;
     /* background-color: #fff; */
     /* border-radius: 7%; */
@@ -748,10 +790,14 @@ figcaption {
     /* width: 100%; */
     /* width: -webkit-fill-available; */
     height: 100%;
-    border-radius: 10% 0 0 10%;
+    border-radius: 17px 0 0 17px;
 }
 
-
+/* Deux <br> caher en desktop et mobile mais qui servent 
+à mieux equilibrés les figure de l'article de droite version tablette */
+br {
+    display: none;
+}
 
 
 
@@ -765,7 +811,7 @@ p {
     margin: 6px 0 0 0;
 }
 
-#font-deux {
+/* #font-deux {
     padding-top: 34px;
 }
 
@@ -775,7 +821,7 @@ p {
 
 #font-un {
     padding-top: 46px;
-}
+} */
 
 a {
     color: #000;
@@ -808,6 +854,170 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+#Activités-Marseille {
+    margin: 60px auto;
+
+
+    /* noveau code */
+
+    width: 94%;
+
+
+}
+
+
+
+
+#deuxième-section {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+#deuxième-section .figcaption {
+    padding: 8px 0 9px 10px;
+    border: 2px solid #f2f2f2;
+    border-radius: 0 0 17px 17px;
+    box-shadow: 0px 7px 6px #F2F2F2;
+    /* box-shadow: 0px 3px black; */
+
+    /* background-color: aquamarine; */
+    /* background-color: green; */
+}
+
+h4 {
+    margin: 0px;
+}
+
+
+
+
+/* les grandes images de (Activités à Marseille)
+--------------------------------------------- */
+
+.article-trois {
+    /* padding: 4px; */
+    width: 23%;
+    height: 90%;
+    border-radius: 17px;
+    /* box-shadow: 0px 3px #F2F2F2; */
+    /* box-shadow: 0 1px 4px #F2F2F2; */
+}
+
+.article-trois img {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px 17px 0 0;
+    object-fit: cover;
+}
+
+
+
+
+/* Les petits img de (Activités à Marseille)
+----------------------------------------- */
+
+.petit-article {
+    width: 23%;
+    height: 90%;
+    border-radius: 17px;
+    /* box-shadow: 0px 3px #F2F2F2; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.petit-photo {
+    /* height: 40%; */
+    border-radius: 17px;
+    box-shadow: 0px 3px #F2F2F2;
+
+    /* box-shadow: 0 1px 4px #F2F2F2; */
+
+}
+
+#photo-un,
+#photo-deux,
+#photo-trois,
+#photo-quatre {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px 17px 0 0;
+    object-fit: cover;
+}
+
+
+/* noveau code  */
+
+.a {
+    height: 50%;
+}
+
+.b {
+    height: 30%;
+}
+
+.c {
+    height: 35%;
+}
+
+.d {
+    height: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------------------------------
                  footer 
 --------------------------------------- */
@@ -815,7 +1025,8 @@ a {
 
 
 footer {
-    padding: 40px 0 40px 0;
+    /* padding: 40px 0 40px 0; */
+    padding: 30px 0;
     background-color: #F2F2F2;
 }
 
@@ -852,19 +1063,84 @@ en haut avec celui du conteneur */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    /* ----------------
+        FORMULAIRE
+    ---------------- */
+
+
+    #filtre {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* --------------------
+       PREMIERE SECTION 
+    -------------------- */
+
+    #première-section {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    /* ----------------------------------------------------------
+    remettre les figure de l'article droite en column */
+
+    #article-droite .figure {
+        width: 30%;
+
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 100%;
+        height: 105px;
+    }
+
+    /* pour mieux equilibré les fidure de l'article (Les plus populaire) */
+    br {
+        display: block;
+    }
+
+    .photo img {
+        width: 100%;
+        border-radius: 17px 17px 0 0;
+
+    }
+
+    /* ------------------------------------------------------------ */
+
+    #article-droite {
+        width: 94%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #article-gauche {
+        width: 94%;
+    }
+
+
+    /* le selecteur .d et .correction revoit leur hauteur à 
+    cause du text trop long dans .figcaption qui modifie les img   */
+
+    /* .d {
+        height: 40%;
+    }
+
+    .correction {
+        height: 85%;
+    } */
+
+
     /* -----------------
             FOOTER
         ----------------- */
 
 
-    /* #filtre {
-        flex-direction: column;
-        gap: 12px;
-    }
 
-    #filtre-mot {
-        text-align: center;
-    } */
+
+
 
 
 
@@ -873,11 +1149,6 @@ en haut avec celui du conteneur */
 
 
 }
-
-
-
-
-
 
 
 
@@ -1035,6 +1306,66 @@ en haut avec celui du conteneur */
 
 
 
+    /* ------------------------
+         DEUXIEME SECTION 
+    ------------------------ */
+
+
+    /* .figcaption #Activités-Marseille {
+        width: 100%;
+        margin: 0px;
+    } */
+
+    #Activités-Marseille {
+        width: 100%;
+        margin: 0px;
+    }
+
+
+
+    #deuxième-section {
+        height: initial;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .petit-article {
+        width: 90%;
+        gap: 20px;
+    }
+
+    /* .article-trois {
+        height: 150px;
+    } */
+
+    #Activités {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .article-trois {
+        width: 90%;
+    }
+
+    .article-trois img {
+        height: 105px;
+    }
+
+    #photo-un,
+    #photo-deux,
+    #photo-trois,
+    #photo-quatre {
+        height: 105px;
+    }
+
+
+
+
+
+
 
 
     /* --------------------------------
@@ -1049,13 +1380,14 @@ en haut avec celui du conteneur */
     }
 
     footer {
-        padding: 40px 0 0 0;
+        /* padding: 40px 0 0 0; */
+        margin-top: 40px;
     }
 
     #Apropos,
     #Nos-hebergements,
     #Assistance {
-        width: 94%;
+        width: 90%;
         margin-bottom: 24px;
     }
 
