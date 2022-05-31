@@ -534,7 +534,10 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 /* les liens */
 
-#filtre {
+
+
+
+/* #filtre {
     display: flex;
     align-items: center;
     gap: 58px;
@@ -542,17 +545,18 @@ LE FORMULAIRE ET SON ENTOURAGE
 }
 
 #filtre .lien {
-    /* margin-right: 18px; */
+    position: relative;
     margin: 0px;
-    /* padding: 16px 16px 16px 0; */
     border: 1px solid #c5c4c4;
     border-radius: 100px 100px;
 }
 
 #filtre i {
-    /* margin-right: 4px; */
+    position: relative;
+    right: 4px;
     padding: 14px;
     border-radius: 50%;
+    border: 2px solid #DEEBFF;
     background-color: #DEEBFF;
     color: #0065FC;
 }
@@ -563,7 +567,53 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 #filtre-mot {
     margin: 0px;
+} */
+
+
+
+#filtre {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    font-weight: bold;
 }
+
+#filtre a {
+    position: relative;
+    border: 2px solid #c5c4c4;
+    border-radius: 25px 25px;
+    color: #000;
+    text-decoration: none;
+    padding: 13px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#filtre i {
+    position: relative;
+    right: 20px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 16px;
+    color: #0065FC;
+}
+
+p {
+    margin: 0px;
+}
+
+#filtre {
+    margin-top: 20px;
+}
+
+#filtre-mot {
+    margin: 0px;
+}
+
+
+
+
 
 
 
