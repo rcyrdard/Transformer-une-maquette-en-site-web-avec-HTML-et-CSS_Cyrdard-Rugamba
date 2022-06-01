@@ -585,9 +585,13 @@ LE FORMULAIRE ET SON ENTOURAGE
     border-radius: 25px 25px;
     color: #000;
     text-decoration: none;
-    padding: 13px;
+    padding: 14px;
     /* display: flex;
     justify-content: space-between; */
+}
+
+#filtre a:hover {
+    color: orange;
 }
 
 #filtre i {
@@ -599,7 +603,7 @@ LE FORMULAIRE ET SON ENTOURAGE
     color: #0065FC;
 }
 
-p {
+#conteneur-section p {
     margin: 0px;
 }
 
@@ -809,7 +813,7 @@ fidcation en dessous des img */
 
 #article-droite {
     width: 26%;
-    padding: 30px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -824,7 +828,7 @@ fidcation en dessous des img */
     /* padding: 4px; */
     width: 100%;
     /* height: 128px; */
-    height: 122px;
+    height: 118px;
     display: flex;
     /* background-color: #fff; */
     /* border-radius: 7%; */
@@ -960,7 +964,7 @@ h4 {
 .article-trois {
     /* padding: 4px; */
     width: 23%;
-    height: 90%;
+    height: 94%;
     border-radius: 17px;
     /* box-shadow: 0px 3px #F2F2F2; */
     /* box-shadow: 0 1px 4px #F2F2F2; */
@@ -981,7 +985,7 @@ h4 {
 
 .petit-article {
     width: 23%;
-    height: 90%;
+    height: 94%;
     border-radius: 17px;
     /* box-shadow: 0px 3px #F2F2F2; */
     display: flex;
@@ -1075,6 +1079,7 @@ h4 {
 
 
 footer {
+    width: 100%;
     /* padding: 40px 0 40px 0; */
     padding: 30px 0;
     background-color: #F2F2F2;
@@ -1112,6 +1117,14 @@ en haut avec celui du conteneur */
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+
+    #conteneur-header {
+        padding: 31px 0 25px 34px;
+    }
+
+
 
     /* ----------------
         FORMULAIRE
@@ -1306,7 +1319,7 @@ en haut avec celui du conteneur */
     }
 
     #conteneur-formulaire {
-        width: 90%;
+        width: 94%;
         margin: 0 auto;
     }
 
@@ -1331,7 +1344,7 @@ en haut avec celui du conteneur */
     #hebergements-titre,
     #afficher-plus {
         /* padding: 0px; */
-        width: 90%;
+        width: 94%;
     }
 
 
@@ -1382,7 +1395,7 @@ en haut avec celui du conteneur */
     }
 
     .petit-article {
-        width: 90%;
+        width: 94%;
         gap: 20px;
     }
 
@@ -1391,13 +1404,13 @@ en haut avec celui du conteneur */
     } */
 
     #Activités {
-        width: 90%;
+        width: 94%;
         margin: auto;
         margin-bottom: 20px;
     }
 
     .article-trois {
-        width: 90%;
+        width: 94%;
     }
 
     .article-trois img {
