@@ -574,9 +574,6 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 
 
-section h3 {
-    width: 10;
-}
 
 #première-section {
     width: 94%;
@@ -649,7 +646,7 @@ section h3 {
 }
 
 #article-droite .figcaption {
-    border-radius: 17px 0 0 17px;
+    border-radius: 0 0 0 17px;
     padding: 6px 0 6px 10px;
 
 }
@@ -686,7 +683,7 @@ section h3 {
 
 /* ---------------------------------------
           article-droite 
-          --------------------------------------- */
+--------------------------------------- */
 
 
 
@@ -695,7 +692,6 @@ section h3 {
 #titre-article-droite i {
     color: initial;
     margin: 0px;
-    /* display: block; */
 }
 
 #titre-article-droite {
@@ -781,14 +777,16 @@ a {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 80px;
-    height: 400px;
     display: flex;
     justify-content: space-between;
 }
 
 #deuxième-section .figcaption {
-    padding: 8px 0 9px 10px;
-    border: 2px solid #f2f2f2;
+    height: 50px;
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 0 0 17px 17px;
     box-shadow: 0px 7px 6px #F2F2F2;
 }
@@ -805,13 +803,14 @@ h4 {
 
 .article-trois {
     width: 23%;
-    height: 94%;
+    height: 400px;
     border-radius: 17px;
 }
 
 .article-trois img {
     width: 100%;
-    height: 100%;
+    height: 350px;
+    display: block;
     border-radius: 17px 17px 0 0;
     object-fit: cover;
 }
@@ -824,7 +823,7 @@ h4 {
 
 .petit-article {
     width: 23%;
-    height: 94%;
+    height: 400px;
     border-radius: 17px;
     display: flex;
     flex-direction: column;
@@ -832,35 +831,51 @@ h4 {
 }
 
 .petit-photo {
-    /* height: 40%; */
     border-radius: 17px;
-    box-shadow: 0px 3px #F2F2F2;
 }
+
+
 
 #photo-un,
 #photo-deux,
 #photo-trois,
 #photo-quatre {
     width: 100%;
-    height: 100%;
+    display: block;
     border-radius: 17px 17px 0 0;
     object-fit: cover;
 }
 
 .a {
-    height: 50%;
+    height: 220px;
+}
+
+.a img {
+    height: 170px;
 }
 
 .b {
-    height: 30%;
+    height: 140px;
+}
+
+.b img {
+    height: 90px;
 }
 
 .c {
-    height: 35%;
+    height: 160px;
+}
+
+.c img {
+    height: 110px;
 }
 
 .d {
-    height: 45%;
+    height: 200px;
+}
+
+.d img {
+    height: 150px;
 }
 
 
@@ -975,22 +990,7 @@ ligne 415 en haut avec celui du conteneur */
         margin-top: 40px;
     }
 
-    /* le selecteur .d et .correction revoit leur hauteur à 
-    cause du text trop long dans .figcaption qui modifie les img   */
 
-    /* .d {
-        height: 40%;
-    }
-
-    .correction {
-        height: 85%;
-    } */
-
-
-
-    /* br{
-        display: none;
-    } */
 
 
 
@@ -1151,6 +1151,7 @@ ligne 415 en haut avec celui du conteneur */
 
     .petit-article {
         width: 94%;
+        height: initial;
         gap: 20px;
     }
 
@@ -1162,6 +1163,7 @@ ligne 415 en haut avec celui du conteneur */
 
     .article-trois {
         width: 94%;
+        height: initial;
     }
 
     .article-trois img {
@@ -1173,6 +1175,13 @@ ligne 415 en haut avec celui du conteneur */
     #photo-trois,
     #photo-quatre {
         height: 105px;
+    }
+
+    .a,
+    .b,
+    .c,
+    .d {
+        height: initial;
     }
 
 
