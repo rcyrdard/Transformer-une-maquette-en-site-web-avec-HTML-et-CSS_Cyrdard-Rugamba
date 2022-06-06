@@ -385,19 +385,6 @@ template {
 
 
 
-
-
-/* --------------------------------------------
-            Fin du fichier normalize
--------------------------------------------- */
-
-
-
-
-
-
-
-
 /* ----------------------------------------------
                 HEADER
 ---------------------------------------------- */
@@ -445,11 +432,9 @@ nav a:hover {
 
 
 
-
 /* ---------------------------------
 LE FORMULAIRE ET SON ENTOURAGE
 --------------------------------- */
-
 
 
 
@@ -504,10 +489,7 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 
 
-/* les liens */
-
-
-
+/* les liens en dessous du formulaire*/
 
 #filtre {
     margin-top: 20px;
@@ -546,7 +528,6 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 /* le texte en bas des liens  */
 
-
 .fa-info {
     padding: 3px 8px;
     border: 1px solid #c5c4c4;
@@ -566,8 +547,6 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 
 
-
-
 /* ---------------------------------------
        PREMIERE-SECTION    article-gauche  
 --------------------------------------- */
@@ -580,7 +559,7 @@ LE FORMULAIRE ET SON ENTOURAGE
     margin: 0 auto;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 40px;
 }
@@ -591,15 +570,31 @@ LE FORMULAIRE ET SON ENTOURAGE
     background-color: #F2F2F2;
 }
 
+/*Choux de diviser l'article gauche en deux blocs en haut et en bas 
+pour eviter le wrap de flex qui ne s'adapte pas bien quand on reduit la page*/
+
 #article-gauche {
     width: 67%;
     padding: 30px 40px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     gap: 20px;
 }
+
+#hebergement-haut {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement-bas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 #hebergements-titre {
     width: 100%;
@@ -640,8 +635,9 @@ LE FORMULAIRE ET SON ENTOURAGE
 }
 
 #article-gauche .figcaption {
-    border-radius: 0 0 17px 17px;
     padding: 0 0 6px 10px;
+    border-radius: 0 0 17px 17px;
+    justify-content: space-between;
 
 }
 
@@ -678,14 +674,9 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 
 
-
-
-
 /* ---------------------------------------
           article-droite 
 --------------------------------------- */
-
-
 
 
 
@@ -704,8 +695,6 @@ LE FORMULAIRE ET SON ENTOURAGE
 #titre-article-droite h2 {
     margin: 0px;
 }
-
-
 
 #article-droite {
     width: 33%;
@@ -735,7 +724,7 @@ LE FORMULAIRE ET SON ENTOURAGE
     border-radius: 17px 0 0 17px;
 }
 
-/* Deux <br> caher en desktop et mobile mais qui servent 
+/* Deux <br> en desktop et mobile mais qui servent 
 à mieux equilibrés les figure de l'article de droite version tablette */
 br {
     display: none;
@@ -760,8 +749,6 @@ a {
 /* ---------------------------------------
           deuxieme-section 
 --------------------------------------- */
-
-
 
 
 
@@ -797,9 +784,9 @@ h4 {
 
 
 
-
 /* les grandes images de (Activités à Marseille)
 --------------------------------------------- */
+
 
 .article-trois {
     width: 23%;
@@ -881,9 +868,6 @@ h4 {
 
 
 
-
-
-
 /* ---------------------------------------
                  footer 
 --------------------------------------- */
@@ -911,8 +895,6 @@ ligne 415 en haut avec celui du conteneur */
     flex-direction: column;
     gap: 10px;
 }
-
-
 
 
 
@@ -956,14 +938,13 @@ ligne 415 en haut avec celui du conteneur */
         flex-direction: column;
     }
 
+    #article-droite .figcaption {
+        height: 107px;
+    }
+
     .photo {
         width: 100%;
         height: 105px;
-    }
-
-    /* pour mieux equilibré les fidure de l'article (Les plus populaire) */
-    br {
-        display: block;
     }
 
     .photo img {
@@ -983,7 +964,7 @@ ligne 415 en haut avec celui du conteneur */
 
     #article-gauche {
         width: 94%;
-        padding: 10px 20px;
+        padding: 36px 20px 10px 20px;
     }
 
     #Activités {
@@ -991,19 +972,11 @@ ligne 415 en haut avec celui du conteneur */
     }
 
 
-
-
-
 }
 
 
 
-
-
-
 @media screen and (max-width: 768px) {
-
-
 
 
 
@@ -1124,20 +1097,32 @@ ligne 415 en haut avec celui du conteneur */
         border-radius: initial;
     }
 
+    /* ----------------
+    article-gauche
+    ---------------- */
+
     #article-gauche {
         background-color: inherit;
         flex-direction: column;
         align-items: center;
     }
 
+    #hebergement-haut {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
+    #hebergement-bas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
 
     /* ------------------------
          DEUXIEME SECTION 
     ------------------------ */
-
-
 
 
     #deuxième-section {
