@@ -392,7 +392,6 @@ template {
 
 
 
-
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -554,7 +553,7 @@ LE FORMULAIRE ET SON ENTOURAGE
 
 
 
-#première-section {
+#premiere-section {
     width: 94%;
     margin: 0 auto;
     margin-top: 30px;
@@ -753,13 +752,13 @@ a {
 
 
 
-#Activités {
+#Activites {
     width: 94%;
     margin: 0 auto;
     margin-top: 50px;
 }
 
-#deuxième-section {
+#deuxieme-section {
     width: 94%;
     margin: 0 auto;
     margin-top: 20px;
@@ -768,7 +767,7 @@ a {
     justify-content: space-between;
 }
 
-#deuxième-section .figcaption {
+#deuxieme-section .figcaption {
     height: 50px;
     padding-left: 14px;
     display: flex;
@@ -924,7 +923,7 @@ ligne 415 en haut avec celui du conteneur */
        PREMIERE SECTION 
     -------------------- */
 
-    #première-section {
+    #premiere-section {
         flex-direction: column-reverse;
         gap: 40px;
     }
@@ -967,7 +966,7 @@ ligne 415 en haut avec celui du conteneur */
         padding: 36px 20px 10px 20px;
     }
 
-    #Activités {
+    #Activites {
         margin-top: 40px;
     }
 
@@ -1075,7 +1074,7 @@ ligne 415 en haut avec celui du conteneur */
 
 
 
-    #première-section {
+    #premiere-section {
         width: 100%;
         flex-direction: column-reverse;
         align-items: center;
@@ -1125,7 +1124,7 @@ ligne 415 en haut avec celui du conteneur */
     ------------------------ */
 
 
-    #deuxième-section {
+    #deuxieme-section {
         width: initial;
         height: initial;
         flex-direction: column;
@@ -1140,7 +1139,7 @@ ligne 415 en haut avec celui du conteneur */
         gap: 20px;
     }
 
-    #Activités {
+    #Activites {
         width: 94%;
         margin: auto;
         margin-bottom: 20px;
