@@ -380,16 +380,15 @@ template {
 
 
 
-
-
+/* ---------------------------------------
+            FIN NORMALIZE
+--------------------------------------- */
 
 
 
 /* ----------------------------------------------
                 HEADER
 ---------------------------------------------- */
-
-
 
 
 body {
@@ -494,6 +493,7 @@ LE FORMULAIRE ET SON ENTOURAGE
     margin-top: 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 58px;
     font-weight: bold;
 }
@@ -523,6 +523,8 @@ LE FORMULAIRE ET SON ENTOURAGE
 #filtre-mot {
     margin: 0px;
 }
+
+
 
 
 /* le texte en bas des liens  */
@@ -605,9 +607,7 @@ pour eviter le wrap de flex qui ne s'adapte pas bien quand on reduit la page*/
     margin-top: 0px;
 }
 
-#hébergements-haut {
-    margin-bottom: 24px;
-}
+
 
 .figure {
     padding: 4px;
